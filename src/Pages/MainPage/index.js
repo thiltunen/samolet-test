@@ -1,6 +1,6 @@
 import "./index.scss";
 import { useEffect } from "react";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { getLibsThunk } from "../../redux/actions/lib";
 import LibrariesList from "../../Components/LibrariesList";
 
@@ -9,7 +9,7 @@ const MainPage = () => {
 
   useEffect(() => {
     dispatch(getLibsThunk());
-  }, [dispatch]);
+  }, []);
 
   return (
     <main className="main">

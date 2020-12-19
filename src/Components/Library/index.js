@@ -1,11 +1,17 @@
 import "./index.scss";
+import { memo } from "react";
+import { Link } from "react-router-dom";
 
-const Library = ({ id }) => {
+const Library = ({ id, name, libs }) => {
   return (
     <li className="list__item" key={id}>
-      111
+      <h2 className="title">{name}</h2>
+      <span>Количество библиотек: {libs}</span>
+      <Link className="btn-about" to={`/about/${id}`}>
+        Подробнее
+      </Link>
     </li>
   );
 };
 
-export default Library;
+export default memo(Library);

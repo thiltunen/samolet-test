@@ -1,6 +1,5 @@
 import "./app.scss";
-import React, { useEffect, useState } from "react";
-import { getData } from "./api";
+import React from "react";
 import Header from "./Components/Header";
 import MainPage from "./Pages/MainPage";
 import AboutPage from "./Pages/AboutPage";

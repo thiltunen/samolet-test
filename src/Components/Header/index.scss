@@ -2,15 +2,22 @@
   width: 100%;
   padding: 2rem;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-}
+  border-bottom: var(--line);
 
-.header__home-icon {
-  width: 3rem;
-  height: 3rem;
-  position: absolute;
-  top: 2%;
-  left: 3%;
-  fill: var(--color-grey-dark-3);
+  &__home-icon {
+    width: 3rem;
+    height: 3.307rem;
+    fill: var(--color-grey-dark-3);
+  }
+
+  &__sort-icon {
+    width: 3rem;
+    height: 3.307rem;
+    fill: var(--color-grey-dark-3);
+    &:hover {
+      cursor: pointer;
+    }
+  }
 }

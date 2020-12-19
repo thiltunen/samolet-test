@@ -3,6 +3,46 @@
   "icons": [
     {
       "icon": {
+        "paths": ["M512 32l-480 480h288v512h384v-512h288z"],
+        "tags": ["arrow-up", "up", "upload", "top"],
+        "defaultCode": 59954,
+        "grid": 16,
+        "attrs": []
+      },
+      "attrs": [],
+      "properties": {
+        "ligatures": "arrow-up, up",
+        "name": "arrow-up",
+        "order": 3,
+        "id": 307,
+        "prevSize": 32
+      },
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 306
+    },
+    {
+      "icon": {
+        "paths": ["M512 992l480-480h-288v-512h-384v512h-288z"],
+        "tags": ["arrow-down", "down", "download", "bottom"],
+        "defaultCode": 59958,
+        "grid": 16,
+        "attrs": []
+      },
+      "attrs": [],
+      "properties": {
+        "ligatures": "arrow-down, down",
+        "name": "arrow-down",
+        "order": 4,
+        "id": 311,
+        "prevSize": 32
+      },
+      "setIdx": 0,
+      "setId": 1,
+      "iconIdx": 310
+    },
+    {
+      "icon": {
         "paths": [
           "M1024 608l-192-192v-288h-128v160l-192-192-512 512v32h128v320h320v-192h128v192h320v-320h128z"
         ],

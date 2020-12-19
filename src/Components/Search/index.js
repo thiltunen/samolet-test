@@ -1,23 +1,26 @@
 import "./index.scss";
-import { useState } from "react";
 import iconSet from "../selection.json";
 import IcomoonReact from "icomoon-react";
+import { useDispatch, useSelector } from "react-redux";
+import { filterLibs } from "redux/actions/filterText";
 
 const Search = () => {
-  const [searchText, setSearchText] = useState("");
+  const searchText = useSelector((state) => state.filterText);
+  const dispatch = useDispatch();
 
   const searchHandler = (value) => {
-    setSearchText(value);
+    dispatch(filterLibs(value));
   };
+
   return (
-    <form className="search">
+    <div className="search">
       <input
         value={searchText}
         onChange={(e) => searchHandler(e.target.value)}
         name="title"
         type="text"
         className="search__input"
-        placeholder="Найти библиотеки"
+        placeholder="Поиск по региону"
       />
       <button className="search__button">
         <IcomoonReact
@@ -26,7 +29,7 @@ const Search = () => {
           icon="search"
         />
       </button>
-    </form>
+    </div>
   );
 };
 
